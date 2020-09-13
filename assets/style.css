@@ -10,6 +10,7 @@ h2 {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
+  cursor: pointer;
 }
 
 h3 {
@@ -33,6 +34,7 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 67px;
+  cursor: pointer;
 }
 
 #hamburguer-menu .menu-bar{
@@ -150,10 +152,22 @@ section#main-content {
 }
 
 #vibradores img, #acessorios img, #anal img, #sado img {
-  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 4s cubic-bezier(.36,.07,.19,.97) infinite alternate;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+#acessorios img{
+  animation-delay: 1s;
+
+}
+#anal img{
+  animation-delay: 1.5s;
+
+}
+#sado img{
+  animation-delay: 2s;
+
 }
 
 @keyframes shake {
@@ -248,6 +262,7 @@ footer {
 
 footer h2 {
   font-weight: 400;
+  cursor: unset;
 }
 
 .phone {
@@ -378,6 +393,46 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 @media screen and (min-width: 900px){
   section#main-content {
     padding: 50px;
-}
+  }
+  
+  #hamburguer-menu{
+    display: none;
+  }
 
-}
+  nav {
+    display: block;
+    position: unset;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color:#45213e;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+    justify-content: flex-end;
+  }
+
+  nav a:not(.close-btn){
+    text-align: center;
+    width: auto;
+    background-color: #45213e;
+    border-bottom: unset;
+    font-size: 13px;
+    padding: 0 10px;
+    color: #fff;
+  }
+
+  nav a:not(.close-btn):hover{
+    text-decoration: underline;
+  }
+
+  nav a:not(.close-btn)::before{
+    margin: 0;
+  }
+
+  nav a:not(.close-btn)::after{
+    content: unset;
+    position: absolute;
+    right: 0;
+  }
+}   
