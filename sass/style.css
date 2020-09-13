@@ -1,8 +1,7 @@
-/* CSS RESET */
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
@@ -37,20 +36,18 @@ header {
   cursor: pointer;
 }
 
-#hamburguer-menu .menu-bar{
+#hamburguer-menu .menu-bar {
   width: 35px;
   height: 3px;
   background-color: #fff;
   margin: 0 0 6px 0;
   border-radius: 5px;
 }
-
-#hamburguer-menu .menu-bar:last-child{
+#hamburguer-menu .menu-bar:last-child {
   margin: 0;
 }
 
 /* CSS BANNER */
-
 section#banner {
   background-color: #34152e;
   color: #d17da8;
@@ -61,19 +58,16 @@ section#banner {
   height: 53px;
   font-size: 12px;
 }
-
-section#banner img{
+section#banner img {
   width: 23px;
   height: 25px;
   margin-right: 6px;
 }
-
-/* CSS Main Content */
-
 section#main-content {
   padding: 15px;
 }
 
+/* CSS Main Content */
 .row {
   display: flex;
   flex-direction: row;
@@ -94,22 +88,18 @@ section#main-content {
   position: relative;
   overflow: hidden;
 }
-
 .category h2, .category img {
   position: absolute;
 }
-
 .category.minor {
   width: 50%;
   background-color: #912448;
 }
 
-
 #vibradores {
   background-color: #45213e;
 }
-
-#vibradores img{
+#vibradores img {
   right: 18%;
   top: 7px;
 }
@@ -117,8 +107,7 @@ section#main-content {
 #acessorios {
   background-color: #db658c;
 }
-
-#acessorios img{
+#acessorios img {
   left: 25%;
 }
 
@@ -137,13 +126,11 @@ section#main-content {
   background-size: cover;
   text-transform: none;
 }
-
 #lingeries h2 {
   position: unset;
   font-size: 24px;
   margin: 0;
 }
-
 #lingeries p.small {
   margin-top: 5px;
   font-size: 10px;
@@ -152,61 +139,39 @@ section#main-content {
 }
 
 #vibradores img, #acessorios img, #anal img, #sado img {
-  animation: shake 4s cubic-bezier(.36,.07,.19,.97) infinite alternate;
+  animation: shake 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite alternate;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
-#acessorios img{
+#acessorios img {
   animation-delay: 1s;
-
 }
 
-#anal img{
+#anal img {
   animation-delay: 1.5s;
-
 }
 
-#sado img{
+#sado img {
   animation-delay: 2s;
-
 }
 
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 /* CSS Newsletter */
-
-section#newsletter img {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
-}
-@keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
-}
-
-
 section#newsletter {
   display: flex;
   flex-direction: column;
@@ -214,23 +179,38 @@ section#newsletter {
   text-align: center;
   margin: 25px 0 50px 0;
 }
-
 section#newsletter img {
-   width: 47px;
-   height: 49px;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  width: 47px;
+  height: 49px;
 }
-
 section#newsletter div {
   width: 75%;
 }
 
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-
 form input {
   width: 100%;
   height: 45px;
@@ -240,10 +220,9 @@ form input {
   text-align: center;
   font-size: 12px;
   color: #919191;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
-form input[type="submit"] {
+form input[type=submit] {
   background-color: #5e2d54;
   color: #fff;
   font-size: 15px;
@@ -251,7 +230,6 @@ form input[type="submit"] {
 }
 
 /* CSS Footer */
-
 footer {
   background-color: #45213e;
   display: flex;
@@ -263,7 +241,6 @@ footer {
   font-size: 15px;
   padding: 20px 0 25px 0;
 }
-
 footer h2 {
   font-weight: 400;
   cursor: unset;
@@ -276,7 +253,6 @@ footer h2 {
   display: flex;
   margin: 20px 0 0 0;
 }
-
 .phone::before {
   content: url(img/phone.svg);
   margin-right: 10px;
@@ -284,7 +260,7 @@ footer h2 {
 }
 
 hr {
-  width: 25%; 
+  width: 25%;
   /* For browser compatibility */
   border-color: #713b67;
   background-color: #713b67;
@@ -297,40 +273,41 @@ hr {
   font-size: 13px;
   margin: 0;
 }
-
 .contact-info div {
   margin-right: 10px;
   display: flex;
   flex-direction: column;
 }
-
 .contact-info div img {
   margin-bottom: 15px;
   cursor: pointer;
 }
-
-.contact-info p{
+.contact-info p {
   margin: 0;
 }
 
 /* CSS NAV */
-
 @keyframes slideFromLeft {
-  0% { left: -85% }
-  100% { left: 0; }
+  0% {
+    left: -85%;
+  }
+  100% {
+    left: 0;
+  }
 }
-
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 header.open nav {
   display: flex;
   -webkit-animation: slideFromLeft 0.5s forwards;
   animation: slideFromLeft 0.5s forwards;
 }
-
 header.open #nav-mask {
   display: block;
   -webkit-animation: fadeIn 0.5s forwards;
@@ -338,7 +315,7 @@ header.open #nav-mask {
 }
 
 #nav-mask {
-  background-color: rgb(49, 26, 43, .95);
+  background-color: rgba(49, 26, 43, 0.95);
   left: 0;
   top: 0;
   height: 100%;
@@ -359,13 +336,11 @@ nav {
   flex-direction: column;
   z-index: 2;
 }
-
 nav .close-btn {
   position: absolute;
   top: 25px;
   left: 105%;
 }
-
 nav a:not(.close-btn) {
   width: 100%;
   height: 60px;
@@ -377,34 +352,31 @@ nav a:not(.close-btn) {
   color: #949494;
   font-size: 19px;
 }
-
 nav a:not(.close-btn)::before {
   margin: 10px;
-  content: '';
+  content: "";
 }
-
 nav a:not(.close-btn)::after {
   content: url(img/arrow.svg);
   position: absolute;
   right: 30px;
 }
-
 nav a:link, nav a:visited, nav a:hover, nav a:active {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-/*Responsividade*/
-
-@media screen and (min-width: 1025px){
+/*Responsividade */
+@media screen and (min-width: 1025px) {
   section#main-content {
     padding: 50px;
   }
-  .market{
+
+  .market {
     display: flex;
     margin-left: 25px;
   }
-  
-  #hamburguer-menu{
+
+  #hamburguer-menu {
     display: none;
   }
 
@@ -414,14 +386,13 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     top: 0;
     left: 0;
     height: 100%;
-    background-color:#45213e;
+    background-color: #45213e;
     display: flex;
     flex-direction: row;
     z-index: 0;
     justify-content: flex-end;
   }
-
-  nav a:not(.close-btn){
+  nav a:not(.close-btn) {
     text-align: center;
     width: auto;
     background-color: #45213e;
@@ -430,18 +401,17 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     padding: 0 10px;
     color: #fff;
   }
-
-  nav a:not(.close-btn):hover{
+  nav a:not(.close-btn):hover {
     text-decoration: underline;
-  }]
-
-  nav a:not(.close-btn)::before{
+  }
+  nav a:not(.close-btn)::before {
     margin: 0;
   }
-
-  nav a:not(.close-btn)::after{
+  nav a:not(.close-btn)::after {
     content: unset;
     position: absolute;
     right: 0;
   }
-}   
+}
+
+/*# sourceMappingURL=style.css.map */

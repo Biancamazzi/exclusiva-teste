@@ -1,0 +1,394 @@
+
+$font-stack:'Montserrat', sans-serif
+$primary-color: #45213e
+$secondary-color: #fff
+  
+body
+  padding: 0
+  margin: 0
+  font-family: $font-stack
+  font-weight: 300
+
+h2
+  font-size: 16px
+  font-weight: 300
+  color: $secondary-color
+  cursor: pointer
+
+h3
+  color: $primary-color
+  font-size: 18px
+  font-weight: 400
+  margin: 15px 0 3px 0
+
+h4
+  color: #919191
+  font-size: 14px
+  font-weight: 300
+  margin: 3px
+
+/* CSS HEADER
+
+header
+  background-color: $primary-color
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 67px
+  cursor: pointer
+
+#hamburguer-menu .menu-bar
+  width: 35px
+  height: 3px
+  background-color: $secondary-color
+  margin: 0 0 6px 0
+  border-radius: 5px
+
+  &:last-child
+    margin: 0
+
+/* CSS BANNER
+
+section
+  &#banner
+    background-color: #34152e
+    color: #d17da8
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    height: 53px
+    font-size: 12px
+
+    img
+      width: 23px
+      height: 25px
+      margin-right: 6px
+
+  &#main-content
+    padding: 15px
+
+/* CSS Main Content
+
+.row
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+.category
+  height: 113px
+  width: 100%
+  margin: 5px
+  color: $secondary-color
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  position: relative
+  overflow: hidden
+
+  h2, img
+    position: absolute
+
+  &.minor
+    width: 50%
+    background-color: #912448
+
+#vibradores
+  background-color: $primary-color
+
+  img
+    right: 18%
+    top: 7px
+
+#acessorios
+  background-color: #db658c
+
+  img
+    left: 25%
+
+#anal img
+  left: -7px
+
+#sado img
+  right: -15px
+  top: -5px
+
+#lingeries
+  height: 153px
+  background: url(img/lingeries.png) center center
+  background-size: cover
+  text-transform: none
+
+  h2
+    position: unset
+    font-size: 24px
+    margin: 0
+
+  p.small
+    margin-top: 5px
+    font-size: 10px
+    font-weight: 400
+    text-transform: uppercase
+
+#vibradores img, #acessorios img, #anal img, #sado img
+  animation: shake 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite alternate
+  transform: translate3d(0, 0, 0)
+  backface-visibility: hidden
+  perspective: 1000px
+
+#acessorios img
+  animation-delay: 1s
+
+#anal img
+  animation-delay: 1.5s
+
+#sado img
+  animation-delay: 2s
+
+@keyframes shake
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+
+  40%, 60%
+    transform: translate3d(4px, 0, 0)
+
+/* CSS Newsletter
+
+section#newsletter
+  img
+    -webkit-animation: mover 1s infinite  alternate
+    animation: mover 1s infinite  alternate
+    width: 47px
+    height: 49px
+
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  margin: 25px 0 50px 0
+
+  div
+    width: 75%
+
+@-webkit-keyframes mover
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-10px)
+
+@keyframes mover
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-10px)
+
+form
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+  input
+    width: 100%
+    height: 45px
+    border: 1px #ebebeb solid
+    border-radius: 5px
+    margin: 5px
+    text-align: center
+    font-size: 12px
+    color: #919191
+    font-family: $font-stack
+
+    &[type="submit"]
+      background-color: #5e2d54
+      color: $secondary-color
+      font-size: 15px
+      cursor: pointer
+
+/* CSS Footer
+
+footer
+  background-color: $primary-color
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  color: $secondary-color
+  font-weight: 300
+  font-size: 15px
+  padding: 20px 0 25px 0
+
+  h2
+    font-weight: 400
+    cursor: unset
+
+.phone
+  font-size: 24px
+  font-weight: 500
+  color: #d91b5b
+  display: flex
+  margin: 20px 0 0 0
+
+  &::before
+    content: url(img/phone.svg)
+    margin-right: 10px
+    margin-top: 2px
+
+hr
+  width: 25%
+
+  /* For browser compatibility
+  border-color: #713b67
+  background-color: #713b67
+  color: #713b67
+  border-style: solid
+
+.contact-info
+  display: flex
+  font-size: 13px
+  margin: 0
+
+  div
+    margin-right: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      margin-bottom: 15px
+      cursor: pointer
+
+  p
+    margin: 0
+
+/* CSS NAV
+
+@keyframes slideFromLeft
+  0%
+    left: -85%
+
+  100%
+    left: 0
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+header.open
+  nav
+    display: flex
+    -webkit-animation: slideFromLeft 0.5s forwards
+    animation: slideFromLeft 0.5s forwards
+
+  #nav-mask
+    display: block
+    -webkit-animation: fadeIn 0.5s forwards
+    animation: fadeIn 0.5s forwards
+
+#nav-mask
+  background-color: rgb(49, 26, 43, 0.95)
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  position: fixed
+  z-index: 1
+  display: none
+
+nav
+  display: none
+  position: fixed
+  left: -85%
+  top: 0
+  height: 100%
+  width: 85%
+  background-color: #f5f5f5
+  flex-direction: column
+  z-index: 2
+
+  .close-btn
+    position: absolute
+    top: 25px
+    left: 105%
+
+  a
+    &:not(.close-btn)
+      width: 100%
+      height: 60px
+      background-color: $secondary-color
+      border-bottom: 2px solid #e4e4e4
+      display: flex
+      flex-direction: row
+      align-items: center
+      color: #949494
+      font-size: 19px
+
+      &::before
+        margin: 10px
+        content: ''
+
+      &::after
+        content: url(img/arrow.svg)
+        position: absolute
+        right: 30px
+
+    &:link, &:visited, &:hover, &:active
+      text-decoration: none
+
+/*Responsividade
+
+@media screen and (min-width: 1025px)
+  section#main-content
+    padding: 50px
+
+  .market
+    display: flex
+    margin-left: 25px
+
+  #hamburguer-menu
+    display: none
+
+  nav
+    display: block
+    position: unset
+    top: 0
+    left: 0
+    height: 100%
+    background-color: $primary-color
+    display: flex
+    flex-direction: row
+    z-index: 0
+    justify-content: flex-end
+
+    a:not(.close-btn)
+      text-align: center
+      width: auto
+      background-color: $primary-color
+      border-bottom: unset
+      font-size: 13px
+      padding: 0 10px
+      color: $secondary-color
+
+      &:hover
+        text-decoration: underline
+
+      &::before
+        margin: 0
+
+      &::after
+        content: unset
+        position: absolute
+        right: 0
