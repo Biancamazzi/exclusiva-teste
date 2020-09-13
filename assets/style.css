@@ -390,9 +390,13 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 
 /*Responsividade*/
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1025px){
   section#main-content {
     padding: 50px;
+  }
+  .market{
+    display: flex;
+    margin-left: 25px;
   }
   
   #hamburguer-menu{
