@@ -244,6 +244,7 @@ form input[type="submit"] {
   background-color: #5e2d54;
   color: #fff;
   font-size: 15px;
+  cursor: pointer;
 }
 
 /* CSS Footer */
@@ -302,6 +303,7 @@ hr {
 
 .contact-info div img {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .contact-info p{
